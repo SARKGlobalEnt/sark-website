@@ -62,7 +62,7 @@
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close" tabindex="-1" aria-label="Close menu"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="./">Home</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="index.html">Home</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="About.html">About Us</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="Product.html">Products</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="Process.html">Process &amp; Quality</a>
@@ -153,7 +153,21 @@ business and partnership-related inquiries, please reach out using the details b
           </div>
         </div>
         <div class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
-          <form action="https://service.nicepagesrv.com/form/v4/form-process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+          <!-- <form action="https://service.nicepagesrv.com/form/v4/form-process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;"> -->
+          <!-- <form id="contactForm" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" onsubmit="return false;"> -->
+          <!-- <form id="contactForm" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"> -->
+          <form 
+            id="contactForm"
+            class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
+            action="javascript:void(0)"
+            style="padding: 10px;"
+            onsubmit="return false">
+          <!-- <form
+            id="contactForm"
+            class="u-form u-form-1"
+            action="javascript:void(0)"
+            onsubmit="return false"
+          > -->
             <div class="u-form-group u-form-name">
               <label for="name-0658" class="u-label u-text-custom-color-4 u-label-1">Company Name</label>
               <input type="text" placeholder="Enter your Company Name" id="name-0658" name="name" class="u-input u-input-rectangle u-radius u-text-custom-color-4 u-input-1" required="">
@@ -164,7 +178,13 @@ business and partnership-related inquiries, please reach out using the details b
             </div>
             <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-3">
               <label for="phone-8e4b" class="u-label u-label-3">Contact Number (with country code)</label>
-              <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. +14155552675)" id="phone-8e4b" name="phone" class="u-input u-input-rectangle u-radius u-text-custom-color-4 u-input-3" required="">
+              <input type="tel" 
+              pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" 
+              placeholder="Enter your phone (e.g. +14155552675)" 
+              id="phone-8e4b" 
+              name="phone" 
+              class="u-input u-input-rectangle u-radius u-text-custom-color-4 u-input-3" 
+              required="">
             </div>
             <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-4">
               <label for="select-7cfa" class="u-label u-label-4">Business Type</label>
@@ -241,25 +261,23 @@ business and partnership-related inquiries, please reach out using the details b
               <label for="message-0658" class="u-label u-label-8">Message</label>
               <textarea placeholder="Enter your message" rows="4" cols="50" id="message-0658" name="message" class="u-input u-input-rectangle u-radius u-text-custom-color-4 u-input-7" required=""></textarea>
             </div>
-            <div class="u-align-left u-form-group u-form-submit">
+            <div class="u-align-left u-form-group">
+              <button type="submit"
+                      class="u-btn u-btn-round u-button-style u-color-var u-radius u-btn-1">
+                Submit
+              </button>
+            </div>
+            <!-- <div class="u-align-left u-form-group u-form-submit">
               <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-color-var u-radius u-btn-1">Submit</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
-            </div>
-            <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
-            <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
+            </div> -->
+            <!-- <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
+            <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div> -->
             <input type="hidden" value="" name="recaptchaResponse">
             <input type="hidden" name="formServices" value="1cf666d4-cce0-0e5c-a3dc-c963614096a6">
           </form>
         </div>
       </div>
-      
-      
-      
-      
-      
-      
-      
-      
     </section>
     
     
@@ -343,7 +361,7 @@ c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg></span>
                       <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
                         <div class="u-inner-container-layout u-sidenav-overflow">
                           <div class="u-menu-close" aria-label="Close menu"></div>
-                          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="./">Home</a>
+                          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="index.html">Home</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="About.html">About</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="Contact.html">Contact</a>
 </li></ul>
@@ -372,4 +390,80 @@ c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg></span>
         </div>
       </div></footer>
   
+<script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbwVy91CtVtAxQ2yvlMRTlT7hX1P_xjZjPO2Vrp61KQ1ugnboe1pdo0N3AdbOBcQbyY3/exec";
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const payload = {
+      company: document.getElementById("name-0658").value,
+      email: document.getElementById("email-0658").value,
+      phone: document.getElementById("phone-8e4b").value,
+      businessType: document.getElementById("select-7cfa").value,
+      market: document.getElementById("select-69cf").value,
+      volume: document.getElementById("select-4ea6").value,
+      packaging: Array.from(
+        document.querySelectorAll('input[name="checkbox[]"]:checked')
+      ).map(cb => cb.value).join(", "),
+      message: document.getElementById("message-0658").value
+    };
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(payload)
+    })
+    .then(() => {
+      alert("Thank you! Your request has been submitted successfully.");
+      e.target.reset();
+    })
+    .catch(err => {
+      console.error(err);
+      alert("Unable to send your message. Please try again.");
+    });
+  });
+</script>
+
+<!-- <script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbxo3eYNC_084O6J7HE-MBKdXHO3OghPvOTBbALEdz3jAROb_qgeHJgMnVMJ0tgBpG5W/exec";
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const packaging = Array.from(
+    document.querySelectorAll('input[name="checkbox[]"]:checked')
+  ).map(cb => cb.value).join(", ");
+
+  const data = {
+    company: document.getElementById("name-0658").value,
+    email: document.getElementById("email-0658").value,
+    phone: document.getElementById("phone-8e4b").value,
+    businessType: document.getElementById("select-7cfa").value,
+    market: document.getElementById("select-69cf").value,
+    volume: document.getElementById("select-4ea6").value,
+    packaging: packaging,
+    message: document.getElementById("message-0658").value
+  };
+
+  fetch(scriptURL, {
+    method: "POST",
+    body: JSON.stringify(payload)
+  })
+  .then(res => res.json())
+  .then(() => {
+    alert("Thank you! Your request has been submitted successfully.");
+    document.getElementById("contactForm").reset();
+  })
+  // .then(() => {
+  //   alert("Thank you! Your request has been submitted successfully.");
+  //   document.getElementById("contactForm").reset();
+  // })
+  .catch(err => {
+    alert("Submission failed. Please try again.");
+    console.error(err);
+  });
+  
+});
+</script> -->
+
 </body></html>
